@@ -11,3 +11,35 @@
 .button--full{
   display: block;
 }
+
+.titled-card {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 35px;
+}
+
+.titled-card__blur {
+  position: absolute;
+  top: 76.19%;
+  bottom: 0;
+  width: 100%;
+  backdrop-filter: blur(25px);
+  border-radius: 35px;
+  z-index: 1;
+}
+
+.titled-card__text {
+  position: absolute;
+  bottom: 120px;
+  width: 100%;
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 2;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}

@@ -38,8 +38,7 @@
   z-index: 2;
   backdrop-filter: blur(25px);
   border-radius: 35px;
-  min-height: 23%;
   text-align: center;
-  line-height: 12;
   color: white;
+  padding: 25px 0;
 }

@@ -13,33 +13,33 @@
 }
 
 .titled-card {
-  height: 100%;
-  width: 100%;
   overflow: hidden;
   position: relative;
   border-radius: 35px;
 }
 
-.titled-card__blur {
+.titled-card__link {
   position: absolute;
-  top: 76.19%;
-  bottom: 0;
   width: 100%;
-  backdrop-filter: blur(25px);
-  border-radius: 35px;
-  z-index: 1;
+  height: 100%;
+  z-index: 3;
+}
+
+.titled-card__image {
+  width: 100%;
 }
 
 .titled-card__text {
   position: absolute;
-  bottom: 120px;
+  bottom: 0;
   width: 100%;
   font-size: 18px;
   font-weight: 700;
   z-index: 2;
-}
-
-a {
+  backdrop-filter: blur(25px);
+  border-radius: 35px;
+  min-height: 23%;
+  text-align: center;
+  line-height: 12;
   color: white;
-  text-decoration: none;
 }

@@ -42,3 +42,149 @@
   color: white;
   padding: 25px 0;
 }
+
+/* --------START--------shop-card--------fordmay-------- */
+.shop-card {
+  position: relative;
+  max-width: 232px;
+  padding: 5px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.shop-card__up-block {}
+
+.card-block {
+  position: relative;
+  display: flex;
+  border-radius: 35px;
+  overflow: hidden;
+}
+
+.card-block__img {
+  max-width: 232px;
+  max-height: 352px;
+}
+
+.card-block__rating {
+  position: absolute;
+  bottom: -88.92%;
+  left: -69.4%;
+  border-radius: 20px;
+
+  height: 100%;
+  width: 100%;
+  background-color: white;
+}
+
+.card-block__rate {
+  position: absolute;
+  bottom: 2%;
+  left: 6%;
+  height: 6%;
+  width: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rate {
+  display: flex;
+  align-items: center;
+  gap: 8%;
+}
+
+.rate__img {
+  max-height: 18px;
+  max-width: 18px;
+}
+
+.rate__number {}
+
+.shop-card__down-block {
+  display: flex;
+  align-items: flex-end;
+}
+
+.card-info {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  gap: 5px;
+  z-index: 1;
+
+  color: black;
+  transition-duration: 1s;
+}
+
+.shop-card:hover .card-info {
+  color: white;
+}
+
+.card-info__title {}
+
+.card-info__second-title {}
+
+.card-info__price {
+  position: absolute;
+  right: 5px;
+  padding: 5px;
+  color: red;
+  z-index: 1;
+
+  bottom: 5px;
+  transition-duration: 1s;
+}
+
+.shop-card:hover .card-info__price {
+  bottom: 40px;
+}
+
+.card-info__button {
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  padding: 5px;
+  z-index: 1;
+  
+  line-height: 0%;
+  max-width: 0px;
+  max-height: 0px;
+  transition-duration: 1s;
+}
+
+.shop-card:hover .card-info__button {
+  max-width: 82px;
+  max-height: 23px;
+  line-height: 100%;
+}
+
+.shop-card__cover-block {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: linear-gradient(180deg, rgba(77, 77, 77, 0.83) 0%, #000000 100%);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+
+  width: 100%;
+  padding: 0;
+  height: 0%;
+  line-height: 0%;
+  transition-duration: 1s;
+}
+
+.shop-card:hover .shop-card__cover-block {
+  padding: 8% 5%;
+  width: 90%;
+  height: 50%;
+  line-height: 100%;
+}
+
+.card-description {
+  font-size: 12px;
+  color: white;
+}
+/* --------END--------shop-card--------fordmay-------- */

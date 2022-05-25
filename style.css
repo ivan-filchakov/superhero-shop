@@ -204,3 +204,52 @@
 .card-description__text {}
 
 /* --------END--------shop-card--------fordmay-------- */
+
+/* --------START--------user-comment--------Artemius555-------- */
+.user-comment__first-block {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
+  border-radius: 10px;
+}
+
+.user-comment__second-block {
+  margin: 20px;
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+}
+
+.user-info__image {
+  height: 32px;
+  width: 32px;
+  padding-right: 10px;
+}
+
+.user-info__name {
+  padding-right: 10px;
+  font-weight: bold;
+}
+
+.user-info__placehold {
+  width: 49px;
+  height: 18px;
+  border-radius: 35px;
+  padding-right: 10px;
+}
+
+.user-info__time {
+  color: gray;
+  font-style: italic;
+  padding-right: 10px;
+}
+
+.comment__text {
+  padding: 11px 20px 0 20px;
+}
+/* --------END--------user-comment--------Artemius555-------- */

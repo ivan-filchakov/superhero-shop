@@ -1,16 +1,46 @@
-.button{
-  padding:5px 15px;
-  border:1px solid black;
-  border-radius: 10px;
-  background: aliceblue;
+.button {
   display: inline-block;
+  position: relative;
+  padding: 5px 25px;
+  border-radius: 12px;
   text-align: center;
-  min-width: 150px;
+  font-size: 12px;
+  background: #ee171f;
+  color: #fff;
+  transition: .1s ease;
 }
 
-.button--full{
+.button__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button__text {}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.button--full {
   display: block;
 }
+
+.button--full:active {
+  transform: translateY(1px);
+}
+
+.button--white {
+  background: #fff;
+  color: #000;
+}
+
+.button--shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+/* --------END--------buttons-------- ivan-filchakov -------- */
 
 .titled-card {
   overflow: hidden;

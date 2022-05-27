@@ -202,11 +202,10 @@
 .card-info__button {
   position: absolute;
   right: 5px;
-  bottom: 10px;
+  bottom: -30px;
   padding: 5px;
   z-index: 1;
 
-  line-height: 0;
   max-width: 0;
   max-height: 0;
   transition-duration: 0.5s;
@@ -215,7 +214,7 @@
 .shop-card:hover .card-info__button {
   max-width: 82px;
   max-height: 23px;
-  line-height: 100%;
+  bottom: 10px;
 }
 
 .shop-card__cover-block {

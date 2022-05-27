@@ -294,3 +294,13 @@
   padding: 11px 20px 0 20px;
 }
 /* --------END--------user-comment--------Artemius555-------- */
+
+/*     FORM-WYSIWYG TEXT EDITOR    */
+.form-wysiwyg {
+  min-height: 150px;
+  height: 100%;
+}
+
+.form-wysiwyg__label {}
+
+.form-wysiwyg__editor {}

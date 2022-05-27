@@ -42,6 +42,17 @@
 }
 /* --------END--------buttons-------- ivan-filchakov -------- */
 
+/* --------START--------common-card-------- ivan-filchakov -------- */
+.common-card {}
+.common-card__content {
+  padding: 24px;
+  border-radius: 35px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+/* --------END--------common-card-------- ivan-filchakov -------- */
+
+/* --------START--------titled-card-------- artemius555 -------- */
 .titled-card {
   overflow: hidden;
   position: relative;
@@ -72,6 +83,7 @@
   color: white;
   padding: 25px 0;
 }
+/* --------END--------titled-card-------- artemius555 -------- */
 
 /* --------START--------shop-card--------fordmay-------- */
 .shop-card {

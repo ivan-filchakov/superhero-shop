@@ -308,3 +308,203 @@ body {
 .form-wysiwyg__label {}
 
 .form-wysiwyg__editor {}
+/*    END FORM-WYSIWYG TEXT EDITOR    */
+
+/* --------START--------HEADER---------------- */
+/*
+https://github.com/KushnirUO/superhero-shop/commit/5c660f59ffffc62e58249289ac23fb272645ee56
+*/
+.header{
+  background: #222222;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  box-sizing: border-box;
+
+}
+
+.header__logo{
+  display: flex;
+  max-width: inherit;
+}
+
+.logo{
+  display: flex;
+  width: max-content;
+}
+
+.header__dropdown{
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown:hover{
+  background: grey;
+}
+
+.dropdown{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown__button{
+  display: flex;
+}
+
+.dropdown__content{
+  display: flex;
+
+}
+
+.nav-menu{
+  display: none;
+}
+
+@media screen and (min-width: 767px){
+  .nav-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .header__dropdown{
+    display: none;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.dropdown__content .nav-menu{
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: -32px;
+  pointer-events: none;
+
+}
+
+.dropdown:hover .dropdown__content .nav-menu{
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+}
+
+.dropdown__button{
+  margin: 2px;
+}
+
+.nav-menu__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222223;
+  padding: 10px 15px;
+}
+
+.nav-menu__item:hover{
+  background: #131313;
+}
+
+.nav-menu__item a{
+  text-decoration: none;
+  color: white;
+}
+
+.header__user-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart{
+  position: relative;
+}
+
+.cart__content{
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.cart:hover .cart__content{
+  display: flex;
+  pointer-events: auto;
+  background: #ffd8ca;
+  visibility: visible;
+  transform: translateY(20px);
+  opacity: 1;
+
+}
+
+.cart-items{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cart-items__item{
+  display: flex;
+  max-height: 35px
+}
+
+@media screen and (max-width: 767px){
+
+  .cart:hover .cart__content{
+    display: none;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+
+.cart__counter{
+  font-size: 10px;
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: -5px;
+  left: 15px;
+}
+
+.user-avatar a{
+  width: 100%;
+  height: 100%;
+}
+
+.user-avatar img {
+  width: 40px;
+}
+
+.cart-items__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.cart-items__item:hover{
+  background: #deb8ad;
+}
+
+.cart-items__item a{
+  text-decoration: none;
+  color: black;
+}
+/* --------END--------HEADER---------------- */
+

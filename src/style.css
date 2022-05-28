@@ -47,6 +47,54 @@ body {
 }
 /* --------END--------buttons-------- ivan-filchakov -------- */
 
+/* --------START--------user-comment--------Artemius555-------- */
+.comments__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-comment__container {
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.user-info__image {
+  height: 32px;
+  width: 32px;
+}
+
+.user-info__name {
+  font-weight: bold;
+}
+
+.user-info__admin {
+  border-radius: 35px;
+}
+
+.user-info__rating {
+  border-radius: 35px;
+}
+
+.user-info__time {
+  color: gray;
+  font-style: italic;
+}
+
+.comment__text {
+  padding: 11px 20px 0 20px;
+}
+/* --------END--------user-comment--------Artemius555-------- */
+
 /* --------START--------common-card-------- ivan-filchakov -------- */
 .common-card {}
 .common-card__content {
@@ -250,54 +298,6 @@ body {
 .card-description__text {}
 
 /* --------END--------shop-card--------fordmay-------- */
-
-.comments__container {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-  padding: 20px;
-}
-
-/* --------START--------user-comment--------Artemius555-------- */
-.user-comment__container {
-  padding: 10px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
-  border-radius: 10px;
-}
-
-.user-info {
-  display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
-
-.user-info__image {
-  height: 32px;
-  width: 32px;
-}
-
-.user-info__name {
-  font-weight: bold;
-}
-
-.user-info__admin {
-  border-radius: 35px;
-}
-
-.user-info__rating {
-  border-radius: 35px;
-}
-
-.user-info__time {
-  color: gray;
-  font-style: italic;
-}
-
-.comment__text {
-  padding: 11px 20px 0 20px;
-}
-/* --------END--------user-comment--------Artemius555-------- */
 
 /*     FORM-WYSIWYG TEXT EDITOR    */
 .form-wysiwyg {

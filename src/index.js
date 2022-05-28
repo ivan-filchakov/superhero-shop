@@ -1,3 +1,6 @@
+import "./reset.css";
+import "./style.css";
+
 // --------------------------------- TEXT EDITOR
 tinymce.init({
   selector: '.form-wysiwyg__editor',

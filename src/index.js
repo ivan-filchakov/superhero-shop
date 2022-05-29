@@ -1,5 +1,7 @@
 import "./reset.css";
 import "./style.css";
+// const state = require("./render.js");
+
 
 // --------------------------------- TEXT EDITOR
 tinymce.init({

@@ -6,14 +6,18 @@ const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 
 module.exports = {
   mode: 'development',
-  entry: './src/index.js',
+  entry: {
+    tinymce: './src/vendor/tinymce.min.js',
+    main: './src/index.js'
+  },
   output: {
-    filename: "main.js",
+    filename: "[name].js",
     path: path.resolve(__dirname, 'dist')
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "./src/index.html"
+      template: "./src/index.html",
+      chunks: [ 'tinymce', 'main' ]
     }),
     new MiniCssExtractPlugin({
       filename: "style.css"

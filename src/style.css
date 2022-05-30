@@ -47,6 +47,62 @@ body {
 }
 /* --------END--------buttons-------- ivan-filchakov -------- */
 
+/* --------START-------input-search---------------- */
+.inputSearch {
+  position: relative;
+  height: 34px;
+}
+.inputSearch label {
+  display: none;
+}
+.inputSearch input {
+  border: none;
+  border-radius: 18px;
+  padding: 0 45px 0 15px;
+  width: 100%;
+  height: 100%;
+}
+.inputSearch input:focus {
+  outline: none;
+}
+.inputSearch button {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.inputSearch button > img {
+  vertical-align: middle;
+}
+.inputSearch button:hover {
+  cursor: pointer;
+}
+.inputSearch button:active > img {
+  transform: scale(.96);
+}
+/* --------END-------input-search---------------- */
+
+/* --------START-------Section---------------- */
+.section {
+  padding: 50px 0;
+}
+.section__header {
+  margin: 0 auto 50px;
+  text-align: center;
+  max-width: 600px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+/* --------END-------Section--------------- */
+
 /* --------START--------user-comment--------Artemius555-------- */
 .comments__container {
   display: flex;
@@ -507,4 +563,145 @@ https://github.com/KushnirUO/superhero-shop/commit/5c660f59ffffc62e58249289ac23f
   color: black;
 }
 /* --------END--------HEADER---------------- */
+
+/*-------------------START------------------------------------ Banner */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  position: relative;
+  height: 500px;
+  padding: 48px;
+  gap: 40px;
+}
+.banner__background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: #000000;
+  overflow: hidden;
+}
+.banner__background img {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .25;
+  filter: blur(6px);
+}
+.banner__content {
+  display: flex;
+  color: #fff;
+}
+@media (max-width: 1279px) {
+  .banner {
+    height: auto;
+  }
+  .banner__content {
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 375px;
+}
+.welcome__heading {
+  padding-bottom: 25px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.welcome__text {
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.welcome__search {
+  padding-bottom: 45px;
+}
+.welcome__quote {}
+.quoteText {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+.quoteAuth {
+  font-size: 14px;
+}
+/*------------------------------------------------------- Slider */
+.slider {}
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slide {
+  display: none;
+  align-items: center;
+}
+.slide__pic {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.slide__pic img {
+  min-width: 100%;
+  height: auto;
+}
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 284px;
+  padding: 0 35px;
+}
+@media (max-width: 768px) {
+  .slider__container {
+    padding: 0 10px;
+  }
+  .slide__pic {
+    height: auto;
+    min-width: 100px;
+  }
+  .slide__info {
+    padding: 0 0 0 15px;
+  }
+}
+.slideHeader {
+  padding-bottom: 25px;
+  font-size: 24px;
+  color: #fff;
+}
+.slideText {
+  padding-bottom: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+.slider__controls {
+  padding-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.sliderDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #CD6F6E;
+}
+.sliderDot--active {
+  background: #ee171f;
+}
+.sliderDot:hover {
+  cursor: pointer;
+}
+/*-------------------END------------------------------------ Banner */
 

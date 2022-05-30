@@ -103,6 +103,31 @@ body {
 }
 /* --------END-------Section--------------- */
 
+/* --------START-------Headings---------------- */
+.heading1 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.heading2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.heading3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.heading4 {
+  font-size: 16px;
+}
+
+.heading5 {
+  font-size: 14px;
+}
+/* --------END-------Headings--------------- */
+
 /* --------START--------user-comment--------Artemius555-------- */
 .comments__container {
   display: flex;
@@ -150,6 +175,69 @@ body {
   padding: 11px 20px 0 20px;
 }
 /* --------END--------user-comment--------Artemius555-------- */
+
+/* --------START--------GRIDS---------------- */
+.rowOf3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.rowOf3__item {
+  flex-basis: 30.666666%;
+  margin-bottom: 20px;
+}
+.rowOf4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.rowOf4__item {
+  flex-basis: 22.75%;
+  margin-bottom: 20px;
+}
+.rowOf5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.rowOf5__item {
+  flex-basis: 18.4%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .rowOf4, .rowOf5 {
+    gap: 4%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .rowOf4__item, .rowOf5__item {
+    flex-basis: 30.666666%;
+  }
+}
+@media (max-width: 768px) {
+  .rowOf3__item {
+    flex-basis: 100%;
+  }
+  .rowOf4 {
+    gap: 4%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .rowOf4__item {
+    flex-basis: 48%;
+  }
+}
+@media (max-width: 479px) {
+  .rowOf4, .rowOf5 {
+    gap: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .rowOf4__item, .rowOf5__item {
+    flex-basis: 100%;
+  }
+}
+/* --------START--------GRIDS---------------- */
 
 /* --------START--------common-card-------- ivan-filchakov -------- */
 .common-card {}

@@ -27,8 +27,38 @@ module.exports = {
   module: {
     rules: [
       {
+        test: /\.html$/i,
+        loader: "html-loader",
+        options: {
+          sources: false
+        }
+      },
+      {
         test: /\.css$/i,
         use: [ MiniCssExtractPlugin.loader, "css-loader" ]
+      },
+      {
+        test: /\.(jpg|png|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: './assets',
+              useRelativePath: true
+            }
+          },
+
+          // {
+          //   loader: 'image-webpack-loader',
+          //   options: {
+          //     mozjpeg: {
+          //       progressive: true,
+          //       quality: 70
+          //     }
+          //   }
+          // }
+        ]
       }
     ]
   },

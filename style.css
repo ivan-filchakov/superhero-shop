@@ -129,30 +129,94 @@ body {
 /* --------END-------Headings--------------- */
 
 /* --------START-------SELECT---------------- */
-select {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;       /* Remove default arrow */
-  /*background-image: url(...);   !* Add custom arrow *!*/
-}
-
 .select {
   position: relative;
+  cursor: pointer;
+  height: 28px;
 }
 
-.select__arrow svg {
-  fill: red;
-  color: red;
+.select__arrow {
+  position: absolute;
+  right: 12px;
+  top: 8px;
+  z-index: 1;
 }
 
 .select__container{
-  border: 1px solid red;
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  border-radius: 14px;
+  background: #DBDBDB;
+  height: 28px;
+  overflow: hidden;
+}
+
+.select__option--header {
+  color: #868686;
 }
 
 .select__option {
-  border: 1px solid yellowgreen;
-  width: 246px;
+  display: flex;
+  align-items: center;
   height: 28px;
+  padding: 0 12px;
+  font-size: 12px;
+}
+
+.select__option:hover {
+  background: #c8c8c8;
+}
+
+/* --------START-------FILTERS---------------- */
+.shop-filter {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.shop-filter__container {}
+
+.filter-by {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.sort-by {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 16px;
+}
+
+.filter-by__heading,
+.sort-by__heading {
+  flex-basis: 100%;
+  padding: 0 12px;
+  font-weight: 700;
+}
+
+.filter-by__select,
+.sort-by__select {
+  width: 146px;
+}
+
+@media (max-width: 479px) {
+  .shop-filter {
+    flex-wrap: wrap;
+  }
+  .sort-by {
+    align-items: flex-start;
+  }
+  .shop-filter__container {
+    width: 100%;
+  }
+  .filter-by__select,
+  .sort-by__select {
+    width: 100%;
+  }
 }
 
 /* --------START--------user-comment--------Artemius555-------- */
@@ -503,7 +567,7 @@ select {
 }
 
 .shop-card:hover .card-info__button {
-  max-width: 82px;
+  max-width: 130px;
   max-height: 23px;
   bottom: 10px;
 }
@@ -688,9 +752,6 @@ select {
   padding: 5px;
   cursor: pointer;
   transform: scaleY(1);
-}
-.userControls__dropButton {
-  fill: #fff;
 }
 .userControls__dropList {
   position: absolute;

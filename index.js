@@ -29,6 +29,7 @@ const signIn = document.querySelector('#signIn');
 const signUp = document.querySelector('#signUp');
 const userPic = document.querySelector("#userPic");
 const signOut = document.querySelector("#signOut");
+const profileLink = document.querySelector("#profileLink");
 
 function authorize(user) {
   cart.hidden = !cart.hidden;
@@ -39,10 +40,12 @@ function authorize(user) {
   if (!userDropList.hidden) {  toggleDropList()  }
 }
 signIn.addEventListener('click', () => {
-  authorize('./assets/userpic-login.png')
+  authorize('./assets/userpic-login.png');
+  profileLink.hidden = false;
 });
 signOut.addEventListener('click', () => {
-  authorize('./assets/userpic-default.svg')
+  authorize('./assets/userpic-default.svg');
+  profileLink.hidden = true;
 });
 
 // ------------------------------------- SLIDER

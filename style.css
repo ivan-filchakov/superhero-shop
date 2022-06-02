@@ -644,6 +644,14 @@ body {
 }
 .userControls__UserPic {
   z-index: 1;
+  position: relative;
+}
+.userControls__UserPic a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .userControls__UserPic img {
   width: 44px;

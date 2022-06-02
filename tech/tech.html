@@ -1,117 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8"/>
-    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <link rel="stylesheet" href="../reset.css"/>
-    <link rel="stylesheet" href="tech.css"/>
-    <link rel="stylesheet" href="../style.css"/>
-    <title>Base Tech</title>
-  </head>
-  <body>
-    <div class="tech__content">
-      <div class="techBlock"><div class="button selectable">my button</div></div>
-      <div class="techBlock"><div class="button button--full selectable">my button</div></div>
+<head>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../reset.css"/>
+  <link rel="stylesheet" href="tech.css"/>
+  <link rel="stylesheet" href="../style.css"/>
+  <title>Base Tech</title>
+</head>
+<body>
+<div class="tech__content">
 
-      <div class="techBlock">
-        <div class="titled-card selectable">
-            <a href="#" class="titled-card__link"></a>
-            <div class="titled-card__image">
-              <img src="https://images.prom.ua/3342374130_w640_h640_samokleyuschayasya-plitka-na.jpg" alt="Loading image...">
+  <!-- /* --------START--------buttons-------- ivan-filchakov -------- */ -->
+  <div class="techBlock">
+    <div class="button selectable">
+      <a class="button__link" href="javascript:void(0)"></a>
+      <span class="button__text">
+            button
+          </span>
+    </div>
+  </div>
+  <div class="techBlock">
+    <div class="button button--full selectable">
+      <a class="button__link" href="javascript:void(0)"></a>
+      <span class="button__text">
+            button--full
+          </span>
+    </div>
+  </div>
+  <div class="techBlock" style="background: #222">
+    <div class="button button--white selectable">
+      <a class="button__link" href="javascript:void(0)"></a>
+      <span class="button__text">
+            button--white
+          </span>
+    </div>
+  </div>
+  <div class="techBlock">
+    <div class="button button--shadow selectable">
+      <a class="button__link" href="javascript:void(0)"></a>
+      <span class="button__text">
+            button--shadow
+          </span>
+    </div>
+  </div>
+  <!-- /* --------END--------buttons-------- ivan-filchakov -------- */ -->
+
+  <!-- /* --------START-------input-search---------------- */ -->
+  <div class="techBlock">
+    <div class="inputSearch selectable">
+      <label for="defaultSearch">default search</label>
+      <input type="search" id="defaultSearch" name="search" placeholder="Find comics..."  style="border: 1px solid #222;">
+      <button>
+        <img src="./assets/search-button.svg" alt="site search">
+      </button>
+    </div>
+  </div>
+  <!-- /* --------END-------input-search---------------- */ -->
+
+  <!-- /* --------START-------Section---------------- */ -->
+  <div class="techBlock">
+    <div class="section selectable">
+      <div class="section__header">
+        <h2>Header</h2>
+      </div>
+      <div class="section__content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. At atque, exercitationem hic quidem ratione rerum sunt tempora. Commodi ipsum itaque placeat praesentium rem. At, consequatur consequuntur debitis deleniti dolor earum exercitationem harum labore libero magnam minus neque nisi, nobis nulla odio, officiis quisquam quo reprehenderit sapiente tenetur unde vel velit voluptates! Ad amet error magnam obcaecati. Alias amet, architecto assumenda consectetur maxime nisi possimus provident quis sit voluptas. At atque consequuntur debitis, delectus distinctio dolor dolores ducimus eius enim error in molestias nesciunt, possimus qui quidem quisquam voluptatum? Dolores eum neque placeat. Dicta dolore eveniet impedit nemo repellendus sunt voluptatem?
+      </div>
+    </div>
+  </div>
+  <!-- /* --------END-------Section--------------- */ -->
+
+  <!-- /* --------START-------Headings---------------- */
+https://github.com/VitaliiHrozynskyi/superhero-shop/commit/71420d38a41c2a32b7558d09a300fe9d4e59f906
+-->
+  <div class="techBlock">
+    <div class="heading1 selectable">Yoann TERUEL</div>
+  </div>
+  <div class="techBlock">
+    <div class="heading2 selectable">ADRESSES</div>
+  </div>
+  <div class="techBlock">
+    <div class="heading3 selectable">Cards</div>
+  </div>
+  <div class="techBlock">
+    <div class="heading4 selectable">Some text</div>
+  </div>
+  <div class="techBlock">
+    <div class="heading5 selectable">Some text</div>
+  </div>
+  <!-- /* --------END-------Headings--------------- */ -->
+
+  <!-- /* --------START-------user-comment--------Artemius555-------- */ -->
+
+  <div class="techBlock">
+    <div class="comments selectable">
+      <div class="comments__container">
+        <div class="user-comment">
+          <div class="user-comment__container">
+            <div class="user-info">
+              <img class="user-info__image" src="./assets/user0.png" alt="Loading photo...">
+              <p class="user-info__name">Yoann TERUEL</p>
+              <div class="user-info__admin">
+                <img src="http://placehold.jp/49x18.png" alt="Loading photo...">
+              </div>
+              <p class="user-info__time">2h ago</p>
             </div>
-            <div class="titled-card__text">
-              <p>Heroes Name</p>
+
+            <div class="comment">
+              <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac aliquam orci. In finibus nunc metus, laoreet aliquet eros tincidunt.</p>
             </div>
+          </div>
+        </div>
+        <div class="user-comment">
+          <div class="user-comment__container">
+            <div class="user-info">
+              <img class="user-info__image" src="./assets/user0.png" alt="Loading photo...">
+              <p class="user-info__name">Yoann TERUEL</p>
+              <p class="user-info__time">2h ago</p>
+              <div class="user-info__rating">
+                <img src="http://placehold.jp/110x18.png" alt="Loading photo...">
+              </div>
+            </div>
+
+            <div class="comment">
+              <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac aliquam orci. In finibus nunc metus, laoreet aliquet eros tincidunt.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="techBlock">
+    <div class="user-comment selectable">
+
+      <div class="user-comment__container">
+        <div class="user-info">
+          <img class="user-info__image" src="./assets/user0.png" alt="Loading photo...">
+          <p class="user-info__name">Yoann TERUEL</p>
+          <div class="user-info__admin">
+            <img src="http://placehold.jp/49x18.png" alt="Loading photo...">
+          </div>
+          <p class="user-info__time">2h ago</p>
+          <div class="user-info__rating">
+            <img src="http://placehold.jp/110x18.png" alt="Loading photo...">
+          </div>
+        </div>
+
+        <div class="comment">
+          <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac aliquam orci. In finibus nunc metus, laoreet aliquet eros tincidunt.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /* --------END-------user-comment--------Artemius555-------- */ -->
+
+  <!-- /* --------START--------GRIDS---------------- */ -->
+  <div class="techBlock">
+    <div class="rowOf3 selectable">
+      <div class="rowOf3__item">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam debitis dolorum est, fugiat iure maiores minus natus optio placeat quam quas quia quidem quisquam soluta tenetur veritatis. Dicta dolorem enim necessitatibus officiis reiciendis? Assumenda at cumque deleniti ducimus fugiat illum ipsum labore, libero minus modi molestiae molestias nam necessitatibus, quam quasi quia quis quod repellendus sunt suscipit tempora ullam ut voluptas! </span>
+      </div>
+      <div class="rowOf3__item">
+        <span>Aliquid iusto laborum quidem veniam! Ad cupiditate, dolor dolore dolores eligendi error excepturi ipsa necessitatibus reiciendis similique, velit vero? Accusamus alias aliquam architecto atque commodi eaque eligendi fugit id iusto labore omnis perspiciatis porro recusandae, repellendus velit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, saepe.</span>
+      </div>
+      <div class="rowOf3__item">
+        <span>A dicta distinctio enim et harum libero maxime minus natus! Consectetur deleniti dolor fugiat itaque molestiae perspiciatis quibusdam recusandae! Accusamus ad adipisci animi aperiam architecto atque, aut, beatae consequatur consequuntur dolor, eaque esse eveniet illo incidunt maxime molestias nesciunt nihil nisi quidem quis quod suscipit ullam veritatis voluptas!</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="techBlock">
+    <div class="rowOf4 selectable">
+      <div class="rowOf4__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci alias minus, molestiae nisi pariatur praesentium quo ut? Aperiam at blanditiis deleniti earum eos eum impedit in, molestias omnis soluta temporibus veniam voluptas voluptatum!
+      </div>
+      <div class="rowOf4__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias asperiores atque aut cupiditate doloremque dolorum et eveniet libero maxime neque, nisi officiis perspiciatis, repellendus saepe sequi tempora voluptatibus? Consequatur fugiat nesciunt quod sint?
+      </div>
+      <div class="rowOf4__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis consequatur, cum dicta eius error fugit laborum nulla sapiente soluta suscipit. Blanditiis ducimus ipsum labore quaerat! Error fuga nobis odit quae quia vel voluptatibus.
+      </div>
+      <div class="rowOf4__item">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad asperiores assumenda, culpa deserunt dolorum eos eveniet nisi nulla odio officiis quaerat qui quidem repudiandae sed tempora! Ab distinctio enim eum perferendis perspiciatis quam?
+      </div>
+    </div>
+  </div>
+
+  <div class="tecBlock">
+    <div class="rowOf5 selectable">
+      <div class="rowOf5__item">
+        <span>A dicta distinctio enim et harum libero maxime minus natus! Consectetur deleniti dolor fugiat itaque molestiae perspiciatis quibusdam recusandae! Accusamus ad adipisci animi aperiam architecto atque, aut, beatae consequatur consequuntur dolor, eaque esse eveniet illo incidunt maxime molestias nesciunt nihil nisi quidem quis quod suscipit ullam veritatis voluptas!</span>
+      </div>
+      <div class="rowOf5__item">
+        <span>Aliquid iusto laborum quidem veniam! Ad cupiditate, dolor dolore dolores eligendi error excepturi ipsa necessitatibus reiciendis similique, velit vero? Accusamus alias aliquam architecto atque commodi eaque eligendi fugit id iusto labore omnis perspiciatis porro recusandae, repellendus velit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, saepe.</span>
+      </div>
+      <div class="rowOf5__item">
+        <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aperiam debitis dolorum est, fugiat iure maiores minus natus optio placeat quam quas quia quidem quisquam soluta tenetur veritatis. Dicta dolorem enim necessitatibus officiis reiciendis? Assumenda at cumque deleniti ducimus fugiat illum ipsum labore, libero minus modi molestiae molestias nam necessitatibus, quam quasi quia quis quod repellendus sunt suscipit tempora ullam ut voluptas! </span>
+      </div>
+      <div class="rowOf5__item">
+        <span>Aliquid iusto laborum quidem veniam! Ad cupiditate, dolor dolore dolores eligendi error excepturi ipsa necessitatibus reiciendis similique, velit vero? Accusamus alias aliquam architecto atque commodi eaque eligendi fugit id iusto labore omnis perspiciatis porro recusandae, repellendus velit voluptatum. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, saepe.</span>
+      </div>
+      <div class="rowOf5__item">
+        <span>A dicta distinctio enim et harum libero maxime minus natus! Consectetur deleniti dolor fugiat itaque molestiae perspiciatis quibusdam recusandae! Accusamus ad adipisci animi aperiam architecto atque, aut, beatae consequatur consequuntur dolor, eaque esse eveniet illo incidunt maxime molestias nesciunt nihil nisi quidem quis quod suscipit ullam veritatis voluptas!</span>
+      </div>
+    </div>
+  </div>
+  <!-- /* --------START--------GRIDS---------------- */ -->
+
+  <!-- /* --------START--------common-card--------ivan-filchakov-------- */ -->
+  <div class="techBlock">
+    <div class="common-card selectable">
+      <div class="common-card__content">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aliquid atque deserunt dolor, exercitationem expedita, impedit magnam natus nisi, numquam perferendis suscipit ullam voluptatum! Alias asperiores aspernatur, excepturi expedita modi natus repudiandae sed.
+      </div>
+    </div>
+  </div>
+  <!-- /* --------END--------common-card-------- ivan-filchakov -------- */ -->
+
+  <!-- /* --------START--------titled-card-------- artemius555-------- */ -->
+  <div class="techBlock">
+    <div class="titled-card selectable">
+      <a href="javascript:void(0)" class="titled-card__link"></a>
+      <div class="titled-card__image">
+        <img src="https://images.prom.ua/3342374130_w640_h640_samokleyuschayasya-plitka-na.jpg" alt="Loading image...">
+      </div>
+      <div class="titled-card__text">
+        <p>Heroes Name</p>
+      </div>
+    </div>
+  </div>
+  <!-- /* --------END--------titled-card-------- artemius555-------- */ -->
+
+  <!-- /* --------START--------shop-card--------fordmay-------- */ -->
+  <div class="techBlock">
+    <div class="shop-card selectable">
+      <div class="shop-card__up-block">
+        <div class="card-block">
+          <div class="card-block__img">
+            <img height="100%" width="100%" src="http://placehold.jp/232x352.png" alt="">
+          </div>
+          <div class="card-block__rating">
+            <div class="rate">
+              <div class="rate__img">
+                <svg height="100%" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                    d="M7.48327 13.1427C7.80107 12.9509 8.19895 12.9509 8.51674 13.1427L11.636 15.0254C12.3933 15.4825 13.3276 14.8035 13.1266 13.9421L12.2988 10.3936C12.2145 10.0321 12.3373 9.65369 12.6179 9.41063L15.3787 7.01891C16.0468 6.44014 15.6905 5.34272 14.8099 5.26678L11.1753 4.95337C10.8065 4.92156 10.4854 4.68858 10.3407 4.3478L8.92052 1.00194C8.57569 0.189574 7.42433 0.189575 7.0795 1.00194L5.65928 4.3478C5.51463 4.68858 5.19353 4.92157 4.82469 4.95337L1.18717 5.26704C0.306943 5.34294 -0.0496162 6.43948 0.617627 7.01857L3.37449 9.41123C3.65422 9.654 3.77685 10.0315 3.69319 10.3923L2.8693 13.9457C2.66965 14.8067 3.60343 15.4844 4.36019 15.0277L7.48327 13.1427Z"
+                    fill="#FFD705" />
+                </svg>
+              </div>
+              <div class="rate__number">5.0</div>
+            </div>
+          </div>
         </div>
       </div>
 
-      <!-- /* --------START--------shop-card--------fordmay-------- */ -->
-      <div class="techBlock">
-        <div class="shop-card selectable">
-          <div class="shop-card__up-block">
-            <div class="card-block">
-              <div class="card-block__img">
-                <img height="100%" width="100%" src="http://placehold.jp/232x352.png" alt="">
+      <div class="shop-card__down-block">
+        <div class="card-info">
+          <div class="card-info__title">Comics Name</div>
+          <div class="card-info__second-title">Collection Name</div>
+          <div class="card-info__button">
+            <div class="button">
+              <a class="button__link" href="javascript:void(0)"></a>
+              <span class="button__text">
+                    button
+                  </span>
+            </div>
+          </div>
+          <div class="card-info__price">$16.00</div>
+        </div>
+      </div>
+
+      <div class="shop-card__cover-block">
+        <div class="card-description">
+          <div class="card-description__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum faucibus semper.
+            Suspendisse potenti. Donec ac massa sem. Pellentesque in bibendum risus. Pellentesque mattis, quam.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /* --------END--------shop-card--------fordmay-------- */ -->
+
+  <!------    FORM--WYSIWYG    ------>
+  <div class="techBlock" style="height: 444px;">
+    <div class="form-wysiwyg selectable">
+      <label class="form-wysiwyg__label" for="textEditor" hidden></label>
+      <textarea
+        class="form-wysiwyg__editor"
+        id="textEditor"
+        placeholder="Taping a comment...">
+          </textarea>
+    </div>
+  </div>
+  <!------   END FORM--WYSIWYG    ------>
+
+  <!-- /* --------START--------HEADER---------------- */
+https://github.com/KushnirUO/superhero-shop/commit/5c660f59ffffc62e58249289ac23fb272645ee56
+-->
+  <div class="header selectable">
+    <div class="header__logo">
+      <div class="logo"><img src="./assets/Marvel_Logo.png"/></div>
+    </div>
+    <div class="header__dropdown">
+      <div class="dropdown">
+        <div class="dropdown__button"><img src="./assets/Hamburger_icon_white.png">
+        </div>
+        <div class="dropdown__content">
+          <div class="nav-menu">
+            <div class="nav-menu__item">
+              <a href="javascript:void(0)">
+                News
+              </a>
+            </div>
+            <div class="nav-menu__item">
+              <a href="javascript:void(0)">
+                Series
+              </a>
+            </div>
+            <div class="nav-menu__item">
+              <a href="javascript:void(0)">
+                Characters
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-menu__item">
+        <a href="javascript:void(0)">
+          News
+        </a>
+      </div>
+      <div class="nav-menu__item">
+        <a href="javascript:void(0)">
+          Series
+        </a>
+      </div>
+      <div class="nav-menu__item">
+        <a href="javascript:void(0)">
+          Characters
+        </a>
+      </div>
+    </div>
+    <div class="header__user-area">
+
+      <div class="cart"><a href=""> <img src="./assets/cart.svg"/></a>
+        <div class="cart__counter">2</div>
+        <div class="cart__content">
+          <div class="cart-items">
+            <div class="cart-items__item">
+              <a href="javascript:void(0)">Item one</a> </div>
+            <div class="cart-items__item">
+              <a href="javascript:void(0)">Item two</a> </div>
+          </div>
+
+        </div>
+      </div>
+      <div class="user-avatar">
+        <div class="user-avatar__img">
+          <a href="javascript:void(0)"><img src="./assets/user0.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- /* --------END--------HEADER---------------- */ -->
+
+  <!-- /* --------START--------BANNER---------------- */ -->
+  <div class="techBlock">
+    <div class="banner selectable">
+      <div class="banner__background">
+        <img src="./assets/banner-bg.jpg" alt="banner">
+      </div>
+      <div class="banner__content">
+        <div class="welcome">
+          <div class="welcome__heading">
+            All Marvel Comics in one place
+          </div>
+          <div class="welcome__text">
+            Welcome to Super-Heroes Shop specialized in Marvel Comics. You will find in the shelves of our shop all
+            your favorite super heroes: Spider-Man, Iron Man, Avengers, X-men, Fanstastic 4...
+          </div>
+          <div class="welcome__search">
+            <div class="inputSearch">
+              <label for="welcomeSearch">default search</label>
+              <input type="search" id="welcomeSearch" name="search" placeholder="Find comics...">
+              <button>
+                <img src="./assets/search-button.svg" alt="site search">
+              </button>
+            </div>
+          </div>
+          <div class="welcome__quote">
+            <div class="quoteText">
+              “With great power comes great responsibility”
+            </div>
+            <div class="quoteAuth">
+              Benjamin Parker (aka Uncle Ben)
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__content">
+        <div class="slider">
+          <div class="slider__container">
+            <div class="slide">
+              <div class="slide__pic">
+                <img src="./assets/slide1.jpg" alt="slide__pic">
               </div>
-              <div class="card-block__rating">
-                <div class="rate">
-                  <div class="rate__img">
-                    <svg height="100%" width="100%" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <path
-                        d="M7.48327 13.1427C7.80107 12.9509 8.19895 12.9509 8.51674 13.1427L11.636 15.0254C12.3933 15.4825 13.3276 14.8035 13.1266 13.9421L12.2988 10.3936C12.2145 10.0321 12.3373 9.65369 12.6179 9.41063L15.3787 7.01891C16.0468 6.44014 15.6905 5.34272 14.8099 5.26678L11.1753 4.95337C10.8065 4.92156 10.4854 4.68858 10.3407 4.3478L8.92052 1.00194C8.57569 0.189574 7.42433 0.189575 7.0795 1.00194L5.65928 4.3478C5.51463 4.68858 5.19353 4.92157 4.82469 4.95337L1.18717 5.26704C0.306943 5.34294 -0.0496162 6.43948 0.617627 7.01857L3.37449 9.41123C3.65422 9.654 3.77685 10.0315 3.69319 10.3923L2.8693 13.9457C2.66965 14.8067 3.60343 15.4844 4.36019 15.0277L7.48327 13.1427Z"
-                        fill="#FFD705" />
-                    </svg>
-                  </div>
-                  <div class="rate__number">5.0</div>
+              <div class="slide__info">
+                <div class="slideHeader">Avenger Univers</div>
+                <div class="slideText">Dernier round pour déterminer qui parmi les Avengers sera le nouvel hôte du Phénix, dans les deux derniers chapitres de la saga Voici le Phénix ! Et un Donald Blake devenu fou affronte Jane Foster, son ancien amour, devenue Valkyrie !
+                </div>
+                <div class="button button--primary">
+                  <a href="javascript:void(0)"></a>
+                  See details
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__pic">
+                <img src="./assets/slide2.jpg" alt="slide__pic">
+              </div>
+              <div class="slide__info">
+                <div class="slideHeader">Avengers</div>
+                <div class="slideText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium amet facere iste nam natus neque provident, velit? Consectetur iste minima modi perferendis perspiciatis possimus rerum!
+                </div>
+                <div class="button button--primary">
+                  <a href="javascript:void(0)"></a>
+                  See details
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__pic">
+                <img src="./assets/slide3.jpg" alt="slide__pic">
+              </div>
+              <div class="slide__info">
+                <div class="slideHeader">Guardians oif the Galaxy</div>
+                <div class="slideText">Alias, aperiam asperiores blanditiis delectus dolores enim id incidunt ipsum magni, modi mollitia neque placeat quae quas quasi rerum sapiente similique sit, temporibus vel. Ad dolor eos eum exercitationem id incidunt laborum maxime nisi numquam odit quisquam rem, suscipit.
+                </div>
+                <div class="button button--primary">
+                  <a href="javascript:void(0)"></a>
+                  See details
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="slide__pic">
+                <img src="./assets/slide4.jpg" alt="slide__pic">
+              </div>
+              <div class="slide__info">
+                <div class="slideHeader">Children of the Atom</div>
+                <div class="slideText">Aliquid commodi dicta dolorum eos error, labore placeat provident quod. Alias corporis cumque laborum natus necessitatibus nisi, obcaecati quibusdam quidem sit soluta sunt ut voluptatum!
+                </div>
+                <div class="button button--primary">
+                  <a href="javascript:void(0)"></a>
+                  See details
                 </div>
               </div>
             </div>
           </div>
-      
-          <div class="shop-card__down-block">
-            <div class="card-info">
-              <div class="card-info__title">Comics Name</div>
-              <div class="card-info__second-title">Collection Name</div>
-              <div class="card-info__button">
-                <img height="100%" width="100%"
-                  src="https://placehold.jp/EE171F/ffffff/82x23.png?css=%7B%22border-radius%22%3A%2215px%22%7D">
-              </div>
-              <div class="card-info__price">$16.00</div>
-            </div>
-          </div>
-      
-          <div class="shop-card__cover-block">
-            <div class="card-description">
-              <div class="card-description__text">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas bibendum faucibus semper. 
-                Suspendisse potenti. Donec ac massa sem. Pellentesque in bibendum risus. Pellentesque mattis, quam.
-              </div>
-            </div>
-          </div>
+          <div class="slider__controls"></div>
         </div>
       </div>
-      <!-- /* --------END--------shop-card--------fordmay-------- */ -->
-
-      <!-- /* --------START-------user-comment--------Artemius555-------- */ -->
-      <div class="techBlock">
-        <div class="user-comment selectable">
-
-          <div class="user-comment__container">
-            <div class="user-info">
-              <img class="user-info__image" src="/avatar/avatar.png" alt="Loading photo...">
-              <p class="user-info__name">Yoann TERUEL</p>
-              <div class="user-info__placehold">
-                <img class="user-info__admin" src="http://placehold.jp/49x18.png" alt="Loading photo...">
-              </div>
-              <p class="user-info__time">2h ago</p>
-            </div>
-
-            <div class="comment">
-              <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac aliquam orci. In finibus nunc metus, laoreet aliquet eros tincidunt.</p>
-            </div>
-          </div>
-
-          <div class="user-comment__container">
-            <div class="user-info">
-              <img class="user-info__image" src="/avatar/avatar.png" alt="Loading photo...">
-              <p class="user-info__name">Yoann TERUEL</p>
-              <p class="user-info__time">2h ago</p>
-              <div class="user-info__placehold">
-                <img class="user-info__rating" src="http://placehold.jp/110x18.png" alt="Loading photo...">
-              </div>
-            </div>
-
-            <div class="comment">
-              <p class="comment__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac aliquam orci. In finibus nunc metus, laoreet aliquet eros tincidunt.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- /* --------END-------user-comment--------Artemius555-------- */ -->
-
     </div>
-    <script src="tech.js" type="text/javascript"></script>
-    <script src="../index.js" type="text/javascript"></script>
-  </body>
+  </div>
+  <!-- /* --------EBD--------BANNER---------------- */ -->
+
+</div>
+<script src="tech.js" type="text/javascript"></script>
+<script
+  src="https://cdn.tiny.cloud/1/ddrherlbvcdwgxvfnzsywrpyk52xwtjkmccp89nm4i7gcrlj/tinymce/6/tinymce.min.js"
+  referrerpolicy="origin">
+</script>
+<script src="../index.js" type="text/javascript"></script>
+</body>
 </html>

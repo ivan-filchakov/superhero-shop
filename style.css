@@ -1,17 +1,255 @@
-.button{
-  padding:5px 15px;
-  border:1px solid black;
-  border-radius: 10px;
-  background: aliceblue;
-  display: inline-block;
-  text-align: center;
-  min-width: 150px;
+body {
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 14px;
 }
 
-.button--full{
+.button {
+  display: inline-block;
+  position: relative;
+  padding: 5px 25px;
+  border-radius: 12px;
+  text-align: center;
+  font-size: 12px;
+  background: #ee171f;
+  color: #fff;
+  transition: .1s ease;
+}
+
+.button__link {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.button__text {}
+
+.button:active {
+  transform: scale(0.96);
+}
+
+.button--full {
   display: block;
 }
 
+.button--full:active {
+  transform: translateY(1px);
+}
+
+.button--white {
+  background: #fff;
+  color: #000;
+}
+
+.button--shadow {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+/* --------END--------buttons-------- ivan-filchakov -------- */
+
+/* --------START-------input-search---------------- */
+.inputSearch {
+  position: relative;
+  height: 34px;
+}
+.inputSearch label {
+  display: none;
+}
+.inputSearch input {
+  border: none;
+  border-radius: 18px;
+  padding: 0 45px 0 15px;
+  width: 100%;
+  height: 100%;
+}
+.inputSearch input:focus {
+  outline: none;
+}
+.inputSearch button {
+  position: absolute;
+  top: -3px;
+  right: -2px;
+  padding: 0;
+  background: none;
+  border: none;
+}
+.inputSearch button > img {
+  vertical-align: middle;
+}
+.inputSearch button:hover {
+  cursor: pointer;
+}
+.inputSearch button:active > img {
+  transform: scale(.96);
+}
+/* --------END-------input-search---------------- */
+
+/* --------START-------Section---------------- */
+.section {
+  padding: 50px 0;
+}
+.section__header {
+  margin: 0 auto 50px;
+  text-align: center;
+  max-width: 600px;
+  font-size: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.section__content {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+/* --------END-------Section--------------- */
+
+/* --------START-------Headings---------------- */
+.heading1 {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.heading2 {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.heading3 {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.heading4 {
+  font-size: 16px;
+}
+
+.heading5 {
+  font-size: 14px;
+}
+/* --------END-------Headings--------------- */
+
+/* --------START--------user-comment--------Artemius555-------- */
+.comments__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 20px;
+}
+
+.user-comment__container {
+  padding: 10px;
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
+  border-radius: 10px;
+}
+
+.user-info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.user-info__image {
+  height: 32px;
+  width: 32px;
+}
+
+.user-info__name {
+  font-weight: bold;
+}
+
+.user-info__admin {
+  border-radius: 35px;
+}
+
+.user-info__rating {
+  border-radius: 35px;
+}
+
+.user-info__time {
+  color: gray;
+  font-style: italic;
+}
+
+.comment__text {
+  padding: 11px 20px 0 20px;
+}
+/* --------END--------user-comment--------Artemius555-------- */
+
+/* --------START--------GRIDS---------------- */
+.rowOf3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4%;
+}
+.rowOf3__item {
+  flex-basis: 30.666666%;
+  margin-bottom: 20px;
+}
+.rowOf4 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3%;
+}
+.rowOf4__item {
+  flex-basis: 22.75%;
+  margin-bottom: 20px;
+}
+.rowOf5 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.rowOf5__item {
+  flex-basis: 18.4%;
+  margin-bottom: 20px;
+}
+@media (max-width: 1023px) {
+  .rowOf4, .rowOf5 {
+    gap: 4%;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+  .rowOf4__item, .rowOf5__item {
+    flex-basis: 30.666666%;
+  }
+}
+@media (max-width: 768px) {
+  .rowOf3__item {
+    flex-basis: 100%;
+  }
+  .rowOf4 {
+    gap: 4%;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .rowOf4__item {
+    flex-basis: 48%;
+  }
+}
+@media (max-width: 479px) {
+  .rowOf4, .rowOf5 {
+    gap: 0;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .rowOf4__item, .rowOf5__item {
+    flex-basis: 100%;
+  }
+}
+/* --------START--------GRIDS---------------- */
+
+/* --------START--------common-card-------- ivan-filchakov -------- */
+.common-card {}
+.common-card__content {
+  padding: 24px;
+  border-radius: 35px;
+  background: #fff;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+}
+/* --------END--------common-card-------- ivan-filchakov -------- */
+
+/* --------START--------titled-card-------- artemius555 -------- */
 .titled-card {
   overflow: hidden;
   position: relative;
@@ -42,6 +280,7 @@
   color: white;
   padding: 25px 0;
 }
+/* --------END--------titled-card-------- artemius555 -------- */
 
 /* --------START--------shop-card--------fordmay-------- */
 .shop-card {
@@ -83,7 +322,7 @@
   background-color: white;
   font-weight: 500;
   font-size: 18px;
-  line-height: 21.09px;
+  line-height: 21px;
   color: black;
 }
 
@@ -118,7 +357,7 @@
   max-width: 123px;
   font-weight: 500;
   font-size: 14px;
-  line-height: 16.41px;
+  line-height: 16px;
 
   color: black;
   transition-duration: 0.5s;
@@ -132,7 +371,7 @@
   max-width: 123px;
   font-weight: 400;
   font-size: 12px;
-  line-height: 14.06px;
+  line-height: 14px;
 
   color: #474747;
   transition-duration: 0.5s;
@@ -160,20 +399,19 @@
 .card-info__button {
   position: absolute;
   right: 5px;
-  bottom: 10px;
+  bottom: -30px;
   padding: 5px;
   z-index: 1;
 
-  line-height: 0%;
-  max-width: 0px;
-  max-height: 0px;
+  max-width: 0;
+  max-height: 0;
   transition-duration: 0.5s;
 }
 
 .shop-card:hover .card-info__button {
   max-width: 82px;
   max-height: 23px;
-  line-height: 100%;
+  bottom: 10px;
 }
 
 .shop-card__cover-block {
@@ -181,7 +419,7 @@
   bottom: 5px;
   left: 0;
   background: linear-gradient(180deg, rgba(77, 77, 77, 0.83) 0%, #000000 100%);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
   width: 100%;
 
@@ -195,7 +433,7 @@
 
 .card-description {
   padding: 8% 5%;
-  line-height: 14.06px;
+  line-height: 14px;
   font-size: 12px;
   font-weight: 400;
   color: white;
@@ -205,44 +443,352 @@
 
 /* --------END--------shop-card--------fordmay-------- */
 
-/* --------START--------user-comment--------Artemius555-------- */
-.user-comment__container {
-  margin: 20px;
-  padding: 10px;
-  box-shadow: 0 0 1px rgba(0, 0, 0, 0.80);
-  border-radius: 10px;
+/*     FORM-WYSIWYG TEXT EDITOR    */
+.form-wysiwyg {
+  min-height: 150px;
+  height: 100%;
 }
 
-.user-info {
+.form-wysiwyg__label {}
+
+.form-wysiwyg__editor {}
+/*    END FORM-WYSIWYG TEXT EDITOR    */
+
+/* --------START--------HEADER---------------- */
+/*
+https://github.com/KushnirUO/superhero-shop/commit/5c660f59ffffc62e58249289ac23fb272645ee56
+*/
+.header{
+  background: #222222;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 15px;
+  box-sizing: border-box;
+
+}
+
+.header__logo{
+  display: flex;
+  max-width: inherit;
+}
+
+.logo{
+  display: flex;
+  width: max-content;
+}
+
+.header__dropdown{
+  display: flex;
+  justify-content: center;
+}
+
+.dropdown:hover{
+  background: grey;
+}
+
+.dropdown{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.dropdown__button{
+  display: flex;
+}
+
+.dropdown__content{
+  display: flex;
+
+}
+
+.nav-menu{
+  display: none;
+}
+
+@media screen and (min-width: 767px){
+  .nav-menu{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
+  .header__dropdown{
+    display: none;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+.dropdown__content .nav-menu{
+  position: absolute;
+  display: none;
+  top: 30px;
+  left: -32px;
+  pointer-events: none;
+
+}
+
+.dropdown:hover .dropdown__content .nav-menu{
+  display: flex;
+  flex-direction: column;
+  pointer-events: auto;
+}
+
+.dropdown__button{
+  margin: 2px;
+}
+
+.nav-menu__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #222223;
+  padding: 10px 15px;
+}
+
+.nav-menu__item:hover{
+  background: #131313;
+}
+
+.nav-menu__item a{
+  text-decoration: none;
+  color: white;
+}
+
+.header__user-area{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+}
+
+.cart{
+  position: relative;
+}
+
+.cart__content{
+  position: absolute;
+  top: 5px;
+  left: -50px;
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.35s ease-out;
+}
+
+.cart:hover .cart__content{
+  display: flex;
+  pointer-events: auto;
+  background: #ffd8ca;
+  visibility: visible;
+  transform: translateY(20px);
+  opacity: 1;
+
+}
+
+.cart-items{
+  display: flex;
+  flex-direction: column;
+
+}
+
+.cart-items__item{
+  display: flex;
+  max-height: 35px
+}
+
+@media screen and (max-width: 767px){
+
+  .cart:hover .cart__content{
+    display: none;
+    position: absolute;
+    pointer-events: none;
+  }
+}
+
+
+.cart__counter{
+  font-size: 10px;
+  position: absolute;
   display: flex;
   align-items: center;
+  justify-content: center;
+  background: red;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  top: -5px;
+  left: 15px;
+}
+
+.user-avatar a{
+  width: 100%;
+  height: 100%;
+}
+
+.user-avatar img {
+  width: 40px;
+}
+
+.cart-items__item{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 5px;
+  padding-right: 30px;
+  padding-bottom: 10px;
+}
+
+.cart-items__item:hover{
+  background: #deb8ad;
+}
+
+.cart-items__item a{
+  text-decoration: none;
+  color: black;
+}
+/* --------END--------HEADER---------------- */
+
+/*-------------------START------------------------------------ Banner */
+.banner {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  position: relative;
+  height: 500px;
+  padding: 48px;
+  gap: 40px;
+}
+.banner__background {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  background: #000000;
+  overflow: hidden;
+}
+.banner__background img {
+  min-width: 100%;
+  min-height: 100%;
+  opacity: .25;
+  filter: blur(6px);
+}
+.banner__content {
+  display: flex;
+  color: #fff;
+}
+@media (max-width: 1279px) {
+  .banner {
+    height: auto;
+  }
+  .banner__content {
+  }
+}
+.welcome {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 375px;
+}
+.welcome__heading {
+  padding-bottom: 25px;
+  font-size: 48px;
+  font-weight: 700;
+}
+.welcome__text {
+  font-size: 14px;
+  padding-bottom: 25px;
+}
+.welcome__search {
+  padding-bottom: 45px;
+}
+.welcome__quote {}
+.quoteText {
+  font-size: 24px;
+  font-weight: 700;
+  font-style: italic;
+  padding-bottom: 20px;
+}
+.quoteAuth {
+  font-size: 14px;
+}
+/*------------------------------------------------------- Slider */
+.slider {}
+.slider__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+.slide {
+  display: none;
+  align-items: center;
+}
+.slide__pic {
+  display: flex;
+  justify-content: center;
+  height: 300px;
+  width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+.slide__pic img {
+  min-width: 100%;
+  height: auto;
+}
+.slide__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 284px;
+  padding: 0 35px;
+}
+@media (max-width: 768px) {
+  .slider__container {
+    padding: 0 10px;
+  }
+  .slide__pic {
+    height: auto;
+    min-width: 100px;
+  }
+  .slide__info {
+    padding: 0 0 0 15px;
+  }
+}
+.slideHeader {
+  padding-bottom: 25px;
+  font-size: 24px;
+  color: #fff;
+}
+.slideText {
+  padding-bottom: 15px;
+  font-size: 12px;
+  color: #fff;
+}
+.slider__controls {
+  padding-top: 15px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 10px;
 }
-
-.user-info__image {
-  height: 32px;
-  width: 32px;
+.sliderDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #CD6F6E;
 }
-
-.user-info__name {
-  font-weight: bold;
+.sliderDot--active {
+  background: #ee171f;
 }
-
-.user-info__admin {
-  border-radius: 35px;
+.sliderDot:hover {
+  cursor: pointer;
 }
-
-.user-info__rating {
-  border-radius: 35px;
-}
-
-.user-info__time {
-  color: gray;
-  font-style: italic;
-}
-
-.comment__text {
-  padding: 11px 20px 0 20px;
-}
-/* --------END--------user-comment--------Artemius555-------- */
+/*-------------------END------------------------------------ Banner */

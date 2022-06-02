@@ -673,6 +673,115 @@ https://github.com/KushnirUO/superhero-shop/commit/5c660f59ffffc62e58249289ac23f
 }
 /* --------END--------HEADER---------------- */
 
+/* --------START--------FOOTER----------------
+https://github.com/fordmay/superhero-shop/commit/1f595d5ce73b0b372ea073ee7165a573fdf2bc2c
+*/
+.footer{
+  max-width: 935px;
+  display: flex;
+}
+.footer_container{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.footer_nav{
+  width: fit-content;
+}
+.footer_nav__logo_container{
+  width: fit-content;
+  height: fit-content;
+}
+.footer_nav__logo_link{
+  display: block;
+  margin-bottom: 22px;
+}
+.footer_nav__logo_link img {
+  max-width: 233px;
+}
+.footer_nav__text_container{
+  width: 100%;
+  margin-bottom: 22px;
+}
+.footer_nav__text{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  color: #7C7C7C;
+}
+.footer_nav__social{
+  display: flex;
+  width: 100%;
+}
+.footer_nav__social_link{
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+}
+.footer_nav__social_link:last-child{
+  margin-right: 0;
+}
+.footer_menu{
+  width: 316px;
+  display: flex;
+  justify-content: space-between;
+}
+.footer_menu__block{
+  display: flex;
+  flex-direction: column;
+}
+
+.footer_menu__title{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 13px;
+  margin-left: 5px;
+}
+.footer_menu__section{
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  width: fit-content;
+  padding: 3px 5px;
+}
+.footer_menu__section:hover{
+  background-color: black;
+  color: white;
+}
+.footer_menu__section_link{
+  text-decoration: none;
+  color: black;
+}
+@media (max-width: 570px) {
+  .footer_container {
+    flex-wrap: wrap-reverse;
+  }
+  .footer_menu{
+    justify-content: space-between;
+    width: 240px;
+  }
+}
+@media (max-width: 516px){
+  .footer_menu__block{
+    align-items: center;
+  }
+  .footer_menu__title{
+    margin-left: 0;
+  }
+  .footer_nav__text_container{
+    text-align: center;
+  }
+  .footer_nav__social{
+    justify-content: center;
+  }
+}
+
 /*-------------------START------------------------------------ Banner */
 .banner {
   display: flex;

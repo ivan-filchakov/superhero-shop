@@ -128,6 +128,33 @@ body {
 }
 /* --------END-------Headings--------------- */
 
+/* --------START-------SELECT---------------- */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  /*background-image: url(...);   !* Add custom arrow *!*/
+}
+
+.select {
+  position: relative;
+}
+
+.select__arrow svg {
+  fill: red;
+  color: red;
+}
+
+.select__container{
+  border: 1px solid red;
+}
+
+.select__option {
+  border: 1px solid yellowgreen;
+  width: 246px;
+  height: 28px;
+}
+
 /* --------START--------user-comment--------Artemius555-------- */
 .comments__container {
   display: flex;
@@ -661,6 +688,9 @@ body {
   padding: 5px;
   cursor: pointer;
   transform: scaleY(1);
+}
+.userControls__dropButton {
+  fill: #fff;
 }
 .userControls__dropList {
   position: absolute;

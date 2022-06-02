@@ -4,10 +4,184 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Index</title>
+    <title>Superhero Shop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="reset.css"/>
     <link rel="stylesheet" href="style.css"/>
   </head>
   <body>
+
+  <div class="header">
+    <div class="header__logo">
+      <div class="logo"><img src="./assets/Marvel_Logo.png"/></div>
+    </div>
+    <div class="header__dropdown">
+      <div class="dropdown">
+        <div class="dropdown__button"><img src="./assets/Hamburger_icon_white.png">
+        </div>
+        <div class="dropdown__content">
+          <div class="nav-menu">
+            <div class="nav-menu__item">
+              <a href="javascript:void(0)">
+                News
+              </a>
+            </div>
+            <div class="nav-menu__item">
+              <a href="javascript:void(0)">
+                Series
+              </a>
+            </div>
+            <div class="nav-menu__item">
+              <a href="javascript:void(0)">
+                Characters
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="nav-menu">
+      <div class="nav-menu__item">
+        <a href="javascript:void(0)">
+          News
+        </a>
+      </div>
+      <div class="nav-menu__item">
+        <a href="javascript:void(0)">
+          Series
+        </a>
+      </div>
+      <div class="nav-menu__item">
+        <a href="javascript:void(0)">
+          Characters
+        </a>
+      </div>
+    </div>
+    <div class="header__user-area">
+      <div class="cart"><a href=""> <img src="./assets/cart.svg"/></a>
+        <div class="cart__counter">2</div>
+        <div class="cart__content">
+          <div class="cart-items">
+            <div class="cart-items__item">
+              <a href="javascript:void(0)">Item one</a> </div>
+            <div class="cart-items__item">
+              <a href="javascript:void(0)">Item two</a> </div>
+          </div>
+        </div>
+      </div>
+      <div class="user-avatar">
+        <div class="user-avatar__img">
+          <a href="javascript:void(0)"><img src="./assets/user0.png"></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="banner">
+    <div class="banner__background">
+      <img src="./assets/banner-bg.jpg" alt="banner">
+    </div>
+    <div class="banner__content">
+      <div class="welcome">
+        <div class="welcome__heading">
+          All Marvel Comics in one place
+        </div>
+        <div class="welcome__text">
+          Welcome to Super-Heroes Shop specialized in Marvel Comics. You will find in the shelves of our shop all
+          your favorite super heroes: Spider-Man, Iron Man, Avengers, X-men, Fanstastic 4...
+        </div>
+        <div class="welcome__search">
+          <div class="inputSearch">
+            <label for="welcomeSearch">default search</label>
+            <input type="search" id="welcomeSearch" name="search" placeholder="Find comics...">
+            <button>
+              <img src="./assets/search-button.svg" alt="site search">
+            </button>
+          </div>
+        </div>
+        <div class="welcome__quote">
+          <div class="quoteText">
+            “With great power comes great responsibility”
+          </div>
+          <div class="quoteAuth">
+            Benjamin Parker (aka Uncle Ben)
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="banner__content">
+      <div class="slider">
+        <div class="slider__container">
+          <div class="slide">
+            <div class="slide__pic">
+              <img src="./assets/slide1.jpg" alt="slide__pic">
+            </div>
+            <div class="slide__info">
+              <div class="slideHeader">Avenger Univers</div>
+              <div class="slideText">Dernier round pour déterminer qui parmi les Avengers sera le nouvel hôte du Phénix, dans les deux derniers chapitres de la saga Voici le Phénix ! Et un Donald Blake devenu fou affronte Jane Foster, son ancien amour, devenue Valkyrie !
+              </div>
+              <div class="button button--primary">
+                <a href="javascript:void(0)"></a>
+                See details
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__pic">
+              <img src="./assets/slide2.jpg" alt="slide__pic">
+            </div>
+            <div class="slide__info">
+              <div class="slideHeader">Avengers</div>
+              <div class="slideText">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium amet facere iste nam natus neque provident, velit? Consectetur iste minima modi perferendis perspiciatis possimus rerum!
+              </div>
+              <div class="button button--primary">
+                <a href="javascript:void(0)"></a>
+                See details
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__pic">
+              <img src="./assets/slide3.jpg" alt="slide__pic">
+            </div>
+            <div class="slide__info">
+              <div class="slideHeader">Guardians oif the Galaxy</div>
+              <div class="slideText">Alias, aperiam asperiores blanditiis delectus dolores enim id incidunt ipsum magni, modi mollitia neque placeat quae quas quasi rerum sapiente similique sit, temporibus vel. Ad dolor eos eum exercitationem id incidunt laborum maxime nisi numquam odit quisquam rem, suscipit.
+              </div>
+              <div class="button button--primary">
+                <a href="javascript:void(0)"></a>
+                See details
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide__pic">
+              <img src="./assets/slide4.jpg" alt="slide__pic">
+            </div>
+            <div class="slide__info">
+              <div class="slideHeader">Children of the Atom</div>
+              <div class="slideText">Aliquid commodi dicta dolorum eos error, labore placeat provident quod. Alias corporis cumque laborum natus necessitatibus nisi, obcaecati quibusdam quidem sit soluta sunt ut voluptatum!
+              </div>
+              <div class="button button--primary">
+                <a href="javascript:void(0)"></a>
+                See details
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="slider__controls"></div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script
+    src="https://cdn.tiny.cloud/1/ddrherlbvcdwgxvfnzsywrpyk52xwtjkmccp89nm4i7gcrlj/tinymce/6/tinymce.min.js"
+    referrerpolicy="origin">
+  </script>
+  <script src="./index.js" type="text/javascript"></script>
   </body>
 </html>

@@ -1,4 +1,50 @@
 
+// Вызов меню шапки в мобильной версии:
+const header = document.querySelector('#header');
+const headerControls = document.querySelector('#headerControls');
+
+function toggleHeader() {
+  const toggle = (height) => header.style.height = height;
+  header.style.height === 'auto' ? toggle('60px') : toggle('auto')
+}
+headerControls.addEventListener('click', toggleHeader);
+
+
+// Вызов меню под стрелочкой возле аватарки
+const userDropButton = document.querySelector('#userDropButton');
+const userDropList = document.querySelector('#userDropList');
+
+function toggleDropList() {
+  let scale;
+  userDropList.hasAttribute('hidden') ? scale = -1 : scale = 1;
+  userDropButton.style.transform = `scaleY(${scale})`;
+  userDropList.hidden = !userDropList.hidden
+}
+userDropButton.addEventListener('click', toggleDropList)
+
+
+// быстрая "авторизация"
+const cart = document.querySelector('#cart');
+const signIn = document.querySelector('#signIn');
+const signUp = document.querySelector('#signUp');
+const userPic = document.querySelector("#userPic");
+const signOut = document.querySelector("#signOut");
+
+function authorize(user) {
+  cart.hidden = !cart.hidden;
+  signIn.hidden = !signIn.hidden;
+  signUp.hidden = !signUp.hidden;
+  userPic.src = user;
+  userDropButton.hidden = !userDropButton.hidden;
+  if (!userDropList.hidden) {  toggleDropList()  }
+}
+signIn.addEventListener('click', () => {
+  authorize('./assets/userpic-login.png')
+});
+signOut.addEventListener('click', () => {
+  authorize('./assets/userpic-default.svg')
+});
+
 // ------------------------------------- SLIDER
 
 function highlightDot(slider, i) {
@@ -35,19 +81,6 @@ function initAllSliders() {
   allSliders.forEach(element => initSlider(element))
 }
 initAllSliders();
-
-// ------------------------------- TEXT EDITOR
-
-tinymce.init({
-  selector: '.form-wysiwyg__editor',
-  menubar: false,
-  statusbar: false,
-  plugins: 'lists',
-  toolbar: 'bold italic underline bullist alignjustify alignleft alignright forecolor',
-  icons: 'material',
-  min_height: 150,
-  height: '100%',
-});
 
 /* -------------------------------------- COLOR CARD
  https://github.com/VitaliiHrozynskyi/superhero-shop/commit/7ca414925bd4d80088d56e203a0b818f9ff11061#diff-e727e4bdf3657fd1d798edcd6b099d6e092f8573cba266154583a746bba0f346

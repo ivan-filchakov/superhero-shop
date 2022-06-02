@@ -246,6 +246,26 @@ https://github.com/VitaliiHrozynskyi/superhero-shop/commit/71420d38a41c2a32b7558
     </div>
   </div>
 
+  <div class="techBlock">
+    <div class="eventCard selectable">
+      <a href="javascript:void(0)" class="eventCard__link"></a>
+      <div class="eventCard__fill"
+           style="background: linear-gradient(180deg, rgba(0, 0, 0, 0.44) 0%, #000 100%)">
+      </div>
+      <div class="eventCard__media">
+        <img src="./assets/event3.jpg" alt="event1">
+      </div>
+      <div class="eventCard__description">
+        <div class="eventHeader">
+          February 2022
+        </div>
+        <div class="eventButton">
+          <img src="./assets/icon-circle-arrow.svg" alt="button">
+        </div>
+      </div>
+    </div>
+  </div>
+
   <!-- /* --------START--------shop-card--------fordmay-------- */ -->
   <div class="techBlock">
     <div class="shop-card selectable">
@@ -310,72 +330,68 @@ https://github.com/VitaliiHrozynskyi/superhero-shop/commit/71420d38a41c2a32b7558
   </div>
   <!------   END FORM--WYSIWYG    ------>
 
-  <!-- /* --------START--------HEADER---------------- */
-https://github.com/KushnirUO/superhero-shop/commit/5c660f59ffffc62e58249289ac23fb272645ee56
--->
-  <div class="header selectable">
-    <div class="header__logo">
-      <div class="logo"><img src="./assets/Marvel_Logo.png"/></div>
-    </div>
-    <div class="header__dropdown">
-      <div class="dropdown">
-        <div class="dropdown__button"><img src="./assets/Hamburger_icon_white.png">
+  <!-- /* --------START--------HEADER---------------- */  -->
+  <div class="techBlock">
+    <div class="header selectable" id="header">
+      <div class="header__controls" id="headerControls">
+        <img src="assets/icon-burger.svg" alt="mobile menu toggle">
+      </div>
+      <div class="header__content header__content--based">
+        <div class="headerLogo">
+          <img src="assets/logo.svg" alt="logo">
         </div>
-        <div class="dropdown__content">
-          <div class="nav-menu">
-            <div class="nav-menu__item">
-              <a href="javascript:void(0)">
-                News
-              </a>
+      </div>
+      <div class="header__content">
+        <nav class="navMenu">
+          <div class="navMenu__button">
+            <a href="javascript:void(0)"></a>
+            News
+          </div>
+          <div class="navMenu__button">
+            <a href="javascript:void(0)"></a>
+            Series
+          </div>
+          <div class="navMenu__button">
+            <a href="javascript:void(0)"></a>
+            Characters
+          </div>
+        </nav>
+      </div>
+      <div class="header__content header__content--right">
+        <div class="userControls">
+          <div class="userControls__cart" id="cart" hidden>
+            <div class="cartIcon">
+              <img src="assets/icon-cart.svg" alt="cart">
             </div>
-            <div class="nav-menu__item">
-              <a href="javascript:void(0)">
-                Series
-              </a>
-            </div>
-            <div class="nav-menu__item">
-              <a href="javascript:void(0)">
-                Characters
-              </a>
+            <div class="cartCount">
+              2
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <div class="nav-menu">
-      <div class="nav-menu__item">
-        <a href="javascript:void(0)">
-          News
-        </a>
-      </div>
-      <div class="nav-menu__item">
-        <a href="javascript:void(0)">
-          Series
-        </a>
-      </div>
-      <div class="nav-menu__item">
-        <a href="javascript:void(0)">
-          Characters
-        </a>
-      </div>
-    </div>
-    <div class="header__user-area">
-
-      <div class="cart"><a href=""> <img src="./assets/cart.svg"/></a>
-        <div class="cart__counter">2</div>
-        <div class="cart__content">
-          <div class="cart-items">
-            <div class="cart-items__item">
-              <a href="javascript:void(0)">Item one</a> </div>
-            <div class="cart-items__item">
-              <a href="javascript:void(0)">Item two</a> </div>
+          <div class="userControls__signButton
+                userControls__signButton--left-red" id="signIn">
+            Signin
           </div>
-
-        </div>
-      </div>
-      <div class="user-avatar">
-        <div class="user-avatar__img">
-          <a href="javascript:void(0)"><img src="./assets/user0.png"></a>
+          <div class="userControls__UserPic">
+            <img src="assets/userpic-default.svg" alt="" id="userPic">
+          </div>
+          <div class="userControls__signButton
+                userControls__signButton--right-white" id="signUp">
+            Signup
+          </div>
+          <div class="userControls__dropButton" id="userDropButton" hidden>
+            <img src="assets/icon-dropdown.svg" alt="dropdown-button">
+          </div>
+          <ul class="userControls__dropList" id="userDropList" hidden>
+            <li class="userControls__dropOption">
+              Lorem
+            </li>
+            <li class="userControls__dropOption">
+              Ipsum
+            </li>
+            <li class="userControls__dropOption" id="signOut">
+              Sign out
+            </li>
+          </ul>
         </div>
       </div>
     </div>

@@ -120,6 +120,13 @@ function init() {
 
   techHeader.append(toggleContent);
   techHeader.append(select);
+
+  const indexLink = document.createElement('a');
+  indexLink.innerText = 'back to index.html';
+  indexLink.href = '../index.html';
+  indexLink.className = 'button';
+  indexLink.style.margin = '0 0 0 20px'
+  techHeader.append(indexLink);
 }
 
 init();

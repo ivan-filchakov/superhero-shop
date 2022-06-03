@@ -1143,3 +1143,55 @@ https://github.com/fordmay/superhero-shop/commit/1f595d5ce73b0b372ea073ee7165a57
 .profile-controls__button img {
   vertical-align: middle;
 }
+
+/* --------START--------COMMON TABLE----------------
+https://github.com/KushnirUO/superhero-shop
+ */
+.common-table__row {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 14px;
+  padding: 8px 18px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.row-order {
+  width: 25%;
+}
+.row-shiping {
+  width: 50%;
+  padding: 0 10px;
+}
+.row-data {
+  width: 25%;
+}
+
+.common-table__list {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  margin-bottom: 5px;
+  padding: 9px 18px;
+  border-radius: 22px;
+  background: #fff;
+  box-shadow: 0 0 5px rgb(0 0 0 / 40%);
+  display: flex;
+  justify-content: space-between;
+}
+
+.common-table__list:hover {
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+  transition-duration: 0.5s;
+}
+
+.list-order {
+  width: 25%;
+}
+.list-shiping {
+  width: 50%;
+  padding: 0 10px;
+}
+.list-data {
+  width: 25%;
+}

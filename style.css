@@ -101,12 +101,17 @@ body {
   max-width: 1080px;
   margin: 0 auto;
 }
+@media (max-width: 1079px) {
+  .section {
+    padding: 20px;
+  }
+}
 /* --------END-------Section--------------- */
 
 /* --------START-------Headings---------------- */
 .heading1 {
   font-weight: bold;
-  font-size: 22px;
+  font-size: 36px;
 }
 
 .heading2 {
@@ -658,6 +663,13 @@ body {
   line-height: 1;
   position: relative;
 }
+.headerLogo a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
 .headerLogo img {
   display: block;
   height: 100%;
@@ -1057,4 +1069,18 @@ https://github.com/fordmay/superhero-shop/commit/1f595d5ce73b0b372ea073ee7165a57
 .sliderDot:hover {
   cursor: pointer;
 }
-/*-------------------END------------------------------------ Banner */
+/*---------------START--------------------- PROFILE BANNER */
+.profile-banner {
+  height: 363px;
+  overflow: hidden;
+}
+.profile-banner__wrapper {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: #051732;
+}
+.profile-banner img {
+  width: 100%;
+}

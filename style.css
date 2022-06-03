@@ -88,6 +88,9 @@ body {
 .section {
   padding: 50px 0;
 }
+.section--lessPadding {
+  padding: 20px 0;
+}
 .section__header {
   margin: 0 auto 50px;
   text-align: center;
@@ -97,13 +100,19 @@ body {
   text-transform: uppercase;
 }
 
+.section__subheader {
+  margin: 0 auto 50px;
+  max-width: 1080px;
+}
+
 .section__content {
   max-width: 1080px;
   margin: 0 auto;
   position: relative;
 }
 @media (max-width: 1079px) {
-  .section {
+  .section,
+  .section__subheader {
     padding: 20px;
   }
 }
@@ -274,6 +283,19 @@ body {
 /* --------END--------user-comment--------Artemius555-------- */
 
 /* --------START--------GRIDS---------------- */
+.rowOf2 {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 2%;
+}
+.rowOf2__item {
+
+}
+.rowOf2__item--wide {
+  flex-basis: 55%;
+}
+.rowOf2__item {}
 .rowOf3 {
   display: flex;
   flex-wrap: wrap;
@@ -302,6 +324,9 @@ body {
   margin-bottom: 20px;
 }
 @media (max-width: 1023px) {
+  .rowOf2 {
+    justify-content: center;
+  }
   .rowOf4, .rowOf5 {
     gap: 4%;
     padding: 0 40px;
@@ -727,10 +752,18 @@ body {
   color: #fff;
 }
 .userControls__signButton {
+  position: relative;
   border-radius: 10px;
   padding: 5px 30px;
   font-size: 12px;
   transition: .2s ease;
+}
+.userControls__signButton a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 .userControls__signButton:hover {
   cursor: pointer;
@@ -1088,15 +1121,24 @@ https://github.com/fordmay/superhero-shop/commit/1f595d5ce73b0b372ea073ee7165a57
 }
 
 /*---------------START--------------------- PROFILE HEADING */
+.section--lessPadding {}
 .profile-heading {
-  position: absolute;
-  bottom: -100%;
+  position: relative;
   width: 100%;
   display: flex;
-  align-items: flex-end;
-  justify-content: space-between;
 }
-.profile-heading__container {}
+
+.profile-heading__left--absolute {
+  position: absolute;
+  bottom: -100%;
+}
+
+.profile-heading__right {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
 .user-card {
   display: flex;
   align-items: center;
@@ -1123,8 +1165,7 @@ https://github.com/fordmay/superhero-shop/commit/1f595d5ce73b0b372ea073ee7165a57
 
 .profile-controls {
   display: flex;
-  align-items: flex-end;
-  flex-grow: 1;
+  align-items: center;
   gap: 10px;
 }
 .profile-controls__button {
@@ -1142,6 +1183,15 @@ https://github.com/fordmay/superhero-shop/commit/1f595d5ce73b0b372ea073ee7165a57
 }
 .profile-controls__button img {
   vertical-align: middle;
+}
+@media (max-width: 768px) {
+  .profile-heading {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .profile-heading__right {
+    justify-content: center;
+  }
 }
 
 /* --------START--------COMMON TABLE----------------
@@ -1194,4 +1244,49 @@ https://github.com/KushnirUO/superhero-shop
 }
 .list-data {
   width: 25%;
+}
+
+/* --------START--------ADDRESS---------------- */
+.address {
+  position: relative;
+}
+.address__controls {
+  position: absolute;
+  right: 0;
+}
+.address__controls:active {
+  transform: scale(.9);
+}
+.address__controls a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+.address__heading {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+.address__row {
+  font-size: 12px;
+}
+
+/* --------START--------TABLE CARD---------------- */
+.rowOf2 {}
+.table-card {}
+.table-card__heading {
+  margin-bottom: 12px;
+}
+.table-card__content {
+  margin-bottom: 12px;
+}
+.table-card__content-row {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 12px;
+}
+.table-card__button {
+  display: flex;
+  justify-content: flex-end;
 }

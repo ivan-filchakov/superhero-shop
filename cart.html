@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Superhero Shop</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="reset.css"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+<div class="header" id="header">
+  <div class="header__controls" id="headerControls">
+    <img src="assets/icon-burger.svg" alt="mobile menu toggle">
+  </div>
+  <div class="header__content header__content--based">
+    <div class="headerLogo">
+      <a href="index.html"></a>
+      <img src="assets/logo.svg" alt="logo">
+    </div>
+  </div>
+  <div class="header__content">
+    <nav class="navMenu">
+      <div class="navMenu__button">
+        <a href="index.html"></a>
+        News
+      </div>
+      <div class="navMenu__button">
+        <a href="series.html"></a>
+        Series
+      </div>
+      <div class="navMenu__button">
+        <a href="javascript:void(0)"></a>
+        Characters
+      </div>
+      <div class="navMenu__button">
+        <a href="tech/tech.html"></a>
+        /tech.html
+      </div>
+    </nav>
+  </div>
+  <div class="header__content header__content--right">
+    <div class="userControls">
+      <div class="userControls__cart" id="cart" hidden>
+        <div class="cartButton">
+          <a href="cart.html"></a>
+          <img src="assets/icon-cart.svg" alt="cart">
+        </div>
+        <div class="cartCount">
+          2
+        </div>
+      </div>
+      <div class="userControls__signButton
+                userControls__signButton--left-red" id="signIn">
+        Signin
+      </div>
+      <div class="userControls__UserPic">
+        <a class="userControls__ProfileLink" id="profileLink" href="profile.html" hidden></a>
+        <img src="assets/userpic-default.svg" alt="" id="userPic">
+      </div>
+      <div class="userControls__signButton
+                userControls__signButton--right-white" id="signUp">
+        <a href="profile.html"></a>
+        Signup
+      </div>
+      <div class="userControls__dropButton" id="userDropButton" hidden>
+        <img src="assets/icon-dropdown.svg" alt="dropdown-button">
+      </div>
+      <ul class="userControls__dropList" id="userDropList" hidden>
+        <li class="userControls__dropOption">
+          Lorem
+        </li>
+        <li class="userControls__dropOption">
+          Ipsum
+        </li>
+        <li class="userControls__dropOption" id="signOut">
+          Sign out
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<div class="section">
+  <div class="section__subheader">
+    <div class="heading2">
+      CART
+    </div>
+  </div>
+  <div class="section__content">
+    <div class="rowOf2">
+      <div class="rowOf2__item rowOf2__item--wide">
+
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="section">
+  <div class="section__content">
+    <div class="footer">
+      <div class="footer_container">
+        <div class="footer_nav">
+          <div class="footer_nav__logo_container">
+            <a class="footer_nav__logo_link" href="#">
+              <img src="./assets/logo.svg" alt="Logo">
+            </a>
+          </div>
+          <div class="footer_nav__text_container">
+            <div class="footer_nav__text">
+              Copyright 2022 Super-Heroes Shop
+            </div>
+          </div>
+          <div class="footer_nav__social">
+            <a class="footer_nav__social_link" href="#">
+              <div class="footer_nav__inst">
+                <img src="./assets/icon-soc-inst.svg" alt="instagram">
+              </div>
+            </a>
+            <a class="footer_nav__social_link" href="#">
+              <div class="footer_nav__twit">
+                <img src="./assets/icon-soc-twt.svg" alt="instagram">
+              </div>
+            </a>
+            <a class="footer_nav__social_link" href="#">
+              <div class="footer_nav__fb">
+                <img src="./assets/icon-soc-fb.svg" alt="instagram">
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="footer_menu">
+          <div class="footer_menu__block">
+            <div class="footer_menu__title">Menu</div>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Home</div></a>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">News</div></a>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Characters</div></a>
+          </div>
+          <div class="footer_menu__block">
+            <div class="footer_menu__title">Company</div>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Management</div></a>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Our story</div></a>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Career</div></a>
+          </div>
+          <div class="footer_menu__block">
+            <div class="footer_menu__title">Support</div>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Support Center</div></a>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Transaction</div></a>
+            <a class="footer_menu__section_link" href="#"><div class="footer_menu__section">Contact us</div></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

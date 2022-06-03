@@ -104,7 +104,56 @@ body {
 .inputSearch button:active > img {
   transform: scale(.96);
 }
-/* --------END-------input-search---------------- */
+/* --------START-------CHECKBOX---------------- */
+.form-checkbox {}
+
+.check-mark {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+
+.check-mark + label {
+  display: inline-flex;
+  align-items: center;
+  user-select: none;
+}
+.check-mark + label::before {
+  content: '';
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  flex-shrink: 0;
+  flex-grow: 0;
+  border: 1px solid #DBDBDB;
+  border-radius: 0.25em;
+  margin-right: 0.5em;
+  background-color: #DBDBDB;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.check-mark:checked+label::before {
+  border-color: #0b76ef;
+  background-color: #0b76ef;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 8 8'%3e%3cpath fill='%23fff' d='M6.564.75l-3.59 3.612-1.538-1.55L0 4.26 2.974 7.25 8 2.193z'/%3e%3c/svg%3e");
+}
+
+.check-mark:not(:disabled):active+label::before {
+  background-color: #b3d7ff;
+  border-color: #b3d7ff;
+}
+
+.labelOZ {
+  height: 14px;
+  left: 23px;
+  top: 4px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+}
 
 /* --------START-------Section---------------- */
 .section {
@@ -334,13 +383,16 @@ body {
   flex-wrap: wrap;
   gap: 2%;
 }
-.rowOf2__item {
-
+.rowOf2__item {}
+.rowOf2__item--narrow {
+  flex-basis: 30%;
 }
 .rowOf2__item--wide {
   flex-basis: 55%;
 }
-.rowOf2__item {}
+.rowOf2__item--grow {
+  flex-grow: 1;
+}
 .rowOf3 {
   display: flex;
   flex-wrap: wrap;
@@ -1372,7 +1424,15 @@ https://github.com/KushnirUO/superhero-shop
   display: inline-block;
   margin-bottom: 36px;
 }
+.purchase-card__options {
+  margin-bottom: 24px;
+}
 .purchase-card__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+}
+.purchase-card__buttons-full {
   display: flex;
   flex-direction: column;
   gap: 12px;
@@ -1446,3 +1506,62 @@ https://github.com/KushnirUO/superhero-shop
     order: -1;
   }
 }
+
+/* --------START--------CART---------------- */
+.cart {
+  display: flex;
+  gap: 30px;
+}
+.cart-list {
+  flex-grow: 1;
+}
+.item-list__container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.cart-checkout {
+  flex-basis: 30%;
+}
+.item-option {
+  display: flex;
+  align-items: stretch;
+  gap: 30px;
+  border-radius: 10px;
+  padding: 15px 30px 15px 20px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.25);
+  transition: .3s ease;
+}
+.item-option:hover {
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.35);
+}
+.item-option__image {
+  width: 50px;
+  border-radius: 5px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+}
+.item-option__image img {
+  width: 100%;
+  height: auto;
+}
+.item-option__info {
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+.item-option__heading {
+  margin-bottom: 6px;
+  font-size: 18px;
+  font-weight: 700;
+}
+.item-option__subheading {
+  color: #303030;
+  flex-grow: 1;
+}
+.item-option__count {}
+.item-option__price {
+  align-self: center;
+}
+

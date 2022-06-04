@@ -104,6 +104,65 @@ body {
 .inputSearch button:active > img {
   transform: scale(.96);
 }
+
+/* --------START-------form-input----------------
+https://github.com/KushnirUO/superhero-shop/commit/6834f220bfdff7ec344daee5bf675b3300daa00e
+*/
+.form-input {}
+
+.big-input-label {
+  position: relative;
+}
+
+.form-input__text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-text-modification {
+  min-height: 28px;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  padding: 0 5px 0 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  caret-color: #0093B4;
+}
+
+.input-text-modification:valid {
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.input-text-modification:invalid {
+  background: #DBDBDB;
+}
+
+.input-text-modification:focus {
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.input-all__text-all-round {
+  border-radius: 14px;
+  width: 100%;
+}
+
+.input-right__text-right-round {
+  border-radius: 0 14px 14px 0;
+  width: 100%;
+}
+
+.input-left__text-left-round {
+  border-radius: 14px 0 0 14px;
+  width: 100%;
+}
+
 /* --------START-------CHECKBOX---------------- */
 .form-checkbox {}
 

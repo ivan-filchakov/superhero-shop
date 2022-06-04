@@ -169,3 +169,80 @@ window.addEventListener("load", () => {
     createColorCard(colorCards[i]);
   }
 });
+
+// ----------------------------------DUMMY SIGN UP FUNCTION
+function initSignup() {
+  const signUpButton = document.querySelector('#signUp');
+  const signUpScreen = document.createElement('div');
+  signUpScreen.className = 'sign-background';
+  signUpScreen.innerHTML =
+
+    '<div class="sign-background">\n' +
+    '  <div class="signupForm" id="signupFormId">\n' +
+    '    <div class="common-form2">\n' +
+    '      <div class="common-form2__title">Signup</div>\n' +
+    '      <div class="signin-dialog">\n' +
+    '        <div class="signin-dialog__text">Already have an account?\n' +
+    '          <a href="javascript:void(0)" class="simple-link">Sign in</a>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '      <label class="input-all">\n' +
+    '        <input class="input-all__text-all-round input-text-modification"\n' +
+    '               type="text"\n' +
+    '               placeholder="Nick name"\n' +
+    '               required>\n' +
+    '      </label>\n' +
+    '      <div class="names-input">\n' +
+    '        <label class="input-left">\n' +
+    '          <input class="input-left__text-left-round input-text-modification"\n' +
+    '                 type="text"\n' +
+    '                 placeholder="First name"\n' +
+    '                 required>\n' +
+    '        </label>\n' +
+    '        <div class="common-form2__spacer"></div>\n' +
+    '        <label class="input-right">\n' +
+    '          <input class="input-right__text-right-round input-text-modification"\n' +
+    '                 type="text"\n' +
+    '                 placeholder="Last name"\n' +
+    '                 required>\n' +
+    '        </label>\n' +
+    '      </div>\n' +
+    '      <label class="input-all">\n' +
+    '        <input class="input-all__text-all-round input-text-modification"\n' +
+    '               type="text"\n' +
+    '               placeholder="E-mail"\n' +
+    '               required>\n' +
+    '      </label>\n' +
+    '      <label class="input-all">\n' +
+    '        <input class="input-all__text-all-round input-text-modification"\n' +
+    '               type="text"\n' +
+    '               placeholder="Password"\n' +
+    '               required>\n' +
+    '      </label>\n' +
+    '      <div class="button button--full">\n' +
+    '        <a class="button__link" href="javascript:void(0)"></a>\n' +
+    '        <span class="button__text">\n' +
+    '            Register\n' +
+    '          </span>\n' +
+    '      </div>\n' +
+    '      <div class="form-checkbox">\n' +
+    '        <div>\n' +
+    '          <input type="checkbox" class="check-mark" id="qwe" name="qwe" value="yes">\n' +
+    '          <label for="qwe" class="labelOZ">\n' +
+    '              <span>I have read and agree to the\n' +
+    '                <a href="javascript:void(0)" class="simple-link">Term of Service</a>\n' +
+    '              </span>\n' +
+    '          </label>\n' +
+    '        </div>\n' +
+    '      </div>\n' +
+    '    </div>\n' +
+    '    <div class="signup-mod moreCommon-form"></div>\n' +
+    '  </div>\n' +
+    '</div>\n';
+
+  signUpButton.addEventListener('click', () => document.body.prepend(signUpScreen));
+
+  const signUpDone = signUpScreen.querySelector('.button');
+  signUpDone.addEventListener('click', () => signUpScreen.remove())
+}
+initSignup();

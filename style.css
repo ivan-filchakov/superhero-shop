@@ -51,6 +51,12 @@ body {
   color: #0093B4;
   text-decoration: underline;
 }
+.simple-link:visited {
+  color: #0093B4;
+}
+.simple-link:active {
+  color: #ee171f;
+}
 
 /* --------START-------- ADMIN---------------- */
 .admin-badge {
@@ -109,64 +115,6 @@ body {
 }
 .inputSearch button:active > img {
   transform: scale(.96);
-}
-
-/* --------START-------form-input----------------
-https://github.com/KushnirUO/superhero-shop/commit/6834f220bfdff7ec344daee5bf675b3300daa00e
-*/
-.form-input {}
-
-.big-input-label {
-  position: relative;
-}
-
-.form-input__text-wrap {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.input-text-modification {
-  min-height: 28px;
-  border: none;
-  outline: 0;
-  outline-offset: 0;
-  padding: 0 5px 0 10px;
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-  caret-color: #0093B4;
-}
-
-.input-text-modification:valid {
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-}
-.input-text-modification:invalid {
-  background: #DBDBDB;
-}
-
-.input-text-modification:focus {
-  background: white;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
-  font-weight: 500;
-  font-size: 12px;
-  line-height: 14px;
-}
-
-.input-all__text-all-round {
-  border-radius: 14px;
-  width: 100%;
-}
-
-.input-right__text-right-round {
-  border-radius: 0 14px 14px 0;
-  width: 100%;
-}
-
-.input-left__text-left-round {
-  border-radius: 14px 0 0 14px;
-  width: 100%;
 }
 
 /* --------START-------CHECKBOX---------------- */
@@ -1644,4 +1592,179 @@ https://github.com/KushnirUO/superhero-shop
   align-self: center;
 }
 
+/* ------------------------------- INPUT FORMS -------------------------
+https://github.com/KushnirUO/superhero-shop/commit/6834f220bfdff7ec344daee5bf675b3300daa00e
+*/
+.input-all{
+  display: flex;
+  width: 100%;
+}
+.input-left{
+  display: flex;
+  justify-content: flex-start;
+  flex-basis: 48%;
+}
+.input-right{
+  display: flex;
+  justify-content: flex-end;
+  flex-basis: 52%;
+}
+.form-input {
+  background-color: bisque;
+  padding: 40px;
+}
+
+.form-input__text-wrap {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.input-text-modification {
+  min-height: 28px;
+  border: none;
+  outline: 0;
+  outline-offset: 0;
+  padding: 0 5px 0 10px;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  caret-color: #0093B4;
+}
+
+.input-text-modification:valid {
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+}
+.input-text-modification:invalid {
+  background: #DBDBDB;
+}
+
+.input-text-modification:focus {
+  background: white;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.25);
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.input-all__text-all-round {
+  border-radius: 14px;
+  width: 100%;
+}
+
+.input-right__text-right-round {
+  border-radius: 0 14px 14px 0;
+  width: 100%;
+}
+
+.input-left__text-left-round {
+  border-radius: 14px 0 0 14px;
+  width: 100%;
+}
+
 /* --------START-------Signin Form---------------- */
+/* --------START-------form-input----------------
+https://github.com/KushnirUO/superhero-shop/commit/6834f220bfdff7ec344daee5bf675b3300daa00e
+*/
+.common-form2{
+  background-color: white;
+  box-sizing: border-box;
+  max-width: 344px;
+  height: 342px;
+  padding: 34px 44px ;
+  font-size: 12px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  /*align-items: center;*/
+  /*justify-content: space-between;*/
+  justify-content: center;
+  border-radius: 20px 0 0 20px;
+}
+.signin-mod {
+  height: 262px;
+  min-width: 300px;
+}
+.signup-mod {
+  height: 342px;
+}
+.moreCommon-form{
+  border-radius: 0 20px 20px 0;
+  width: 344px;
+  background: url("assets/banner-bg.jpg") #C4C4C4;
+}
+.common-form2__title{
+  text-align: center;
+  font-size: 36px;
+  font-weight: bold;
+}
+.signin-dialog{
+  display: flex;
+  justify-content: center;
+}
+.common-form2__input{
+  height: 28px;
+  width: 100%;
+  border: none;
+  box-sizing: border-box;
+  background-color: #DBDBDB;
+  border-radius: 14px;
+  font-size: 12px;
+  padding: 0px 10px ;
+}
+.common-form2__input_active{
+  background-color: white;
+  filter: drop-shadow(0px 0px 3px #DBDBDB);
+}
+.names-input{
+  width: 100%;
+  display: flex;
+  justify-content: stretch;
+}
+.names-input_left{
+  border-radius: 14px 0px 0px 14px;
+}
+.names-input_right{
+  border-radius: 0px 14px 14px 0px ;
+}
+.common-form2__spacer{
+  width: 4px;
+}
+.common-form2__button{
+  background-color: #EE171F;
+  color: white;
+}
+.signupForm {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index:20;
+}
+@media (max-width: 768px) {
+  .signupForm  {
+    display: block;
+  }
+  .common-form2 {
+    border-radius: 0;
+    max-width: unset;
+  }
+  .moreCommon-form {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+.signin_mod{
+  height: 262px;
+  width: 344px;
+}
+
+.sign-background {
+  z-index: 100;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+}

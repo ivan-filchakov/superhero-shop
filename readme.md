@@ -10,6 +10,8 @@
 
 - [cart.html][https://ivan-filchakov.github.io/superhero-shop/cart.html]
 
+- працює кнопка SignUp
+
 [https://ivan-filchakov.github.io/superhero-shop/index.html]: https://ivan-filchakov.github.io/superhero-shop/index.html
 
 [https://ivan-filchakov.github.io/superhero-shop/series.html]: https://ivan-filchakov.github.io/superhero-shop/series.html

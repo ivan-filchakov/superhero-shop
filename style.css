@@ -607,7 +607,9 @@ body {
 
 .card-block__img {
   max-width: 232px;
-  max-height: 352px;
+  height: 352px;
+  width: 100%;
+  background: #eee;
 }
 
 .card-block__rating {
